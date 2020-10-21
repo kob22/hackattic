@@ -10,7 +10,7 @@ from struct import unpack
 access_token = os.environ.get('access_token')
 
 get_url = f'https://hackattic.com/challenges/help_me_unpack/problem?access_token={access_token}'
-post_url = f'https://hackattic.com//challenges/help_me_unpack/solve?access_token={access_token}'
+post_url = f'https://hackattic.com/challenges/help_me_unpack/solve?access_token={access_token}'
 data_to_unpack = json.loads(requests.get(get_url).text)
 
 bytes_to_decode = data_to_unpack['bytes']

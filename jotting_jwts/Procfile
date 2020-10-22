@@ -1,1 +1,0 @@
-web: gunicorn kob22jwt.wsgi --log-file -
